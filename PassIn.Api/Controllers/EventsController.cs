@@ -28,9 +28,7 @@ namespace PassIn.Api.Controllers
 			{
 				return BadRequest(new ResponseErrorJson(ex.Message));
 			}
-			catch
-			{
-				return StatusCode(StatusCodes.Status500InternalServerError, new ResponseErrorJson("Unknow error"));
+			
 			}
 		}
 
